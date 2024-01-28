@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: unset;
+  }
+}
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  scroll-behavior: smooth;
+}
+.overflow-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 20px;
+}
+p {
+  font-weight: 200;
+  font-size: 18px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation-name: fade;
+  animation-duration: 0.4s; /* Change animation duration to 2 seconds */
+  animation-timing-function: ease-in-out; /* Change easing function */
+}
+
+@keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15)
+    }
+    100% {
+      transform: scale(1)
+    }
+}
+
+.pop {
+  animation: pop 0.2s ease-in-out forwards
+}
+
+.sign-card {
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.05), /* Outer shadow */
+  0 6px 10px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+}
+.b-shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s;
+}
+.b-shadow:hover {
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1) !important
+}
