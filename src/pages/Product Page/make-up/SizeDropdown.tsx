@@ -18,7 +18,7 @@ const SizeDropdown = ({ product }: SizeDropdownProps ) => {
     setDropActive(false);
   };
   const height = 31 * product.sizes.length;
-  console.log(height);
+  console.log(height)
   return (
     <div
       onClick={handleDropdown}
